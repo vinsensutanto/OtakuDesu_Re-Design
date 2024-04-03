@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Otaku Desu</title>
+    <link rel="icon" href="assets/img/logo.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css" />
+  </head>
+
+  <body>
+    <video autoplay muted loop class="credBG">
+      <source src="assets/vid/credbg.mp4" type="video/mp4" />
+    </video>
+    <div class="content-wrapper">
+      <form>
+        <a href="javascript:history.back()"><i class="fa fa-angle-left fa-3x"></i></a>
+        <img src="assets/img/logo.png" alt="logo" />
+        <div class="input-wrapper">
+          <input type="text" id="inputN" required />
+          <label for="inputN" class="placeholder">Username</label>
+        </div>
+
+        <div class="input-wrapper">
+          <input type="text" id="email" required />
+          <label for="email" class="placeholder">Password</label>
+        </div>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="cbx" />
+          <label for="cbx" class="check">
+            <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path
+                d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"
+              ></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+            </svg>
+          </label>
+          Agree to Terms of Use & Privacy Policy
+        </div>
+        <button>Login</button>
+        <p class="login">Don't have an account yet? <a class="login" href="register.html">Sign Up</a>!</p>
+
+        <div class="altr-title">OR</div>
+        <div class="sign-in-altr">
+            <button type="button" class="login-altr-btn" >
+                <i class="fa fa-google fa-2x"></i>Sign in with Google
+            </button>
+            <br>
+            <button type="button" class="login-altr-btn" >
+                <i class="fa fa-apple fa-2x"></i>Sign in with Apple
+            </button>
+            <br>
+            <button type="button" class="login-altr-btn" >
+                <i class="fa fa-facebook fa-2x"></i>Sign in with Facebook
+            </button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="assets/js/register.js"></script>
+</html>

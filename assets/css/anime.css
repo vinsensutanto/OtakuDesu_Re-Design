@@ -1,0 +1,227 @@
+body {
+  background-color: var(--bblue);
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  background-image: linear-gradient(to bottom, transparent, var(--bblue)), url("../img/banner_Kakegurui.jpg");
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.info {
+  color: white;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* align-items: flex-start; */
+  padding: 5vw 5vw 0vw 5vw;
+  font-size: 1.5rem;
+}
+
+.info h2 {
+  font-size: 5rem;
+}
+
+.desc {
+  margin: 0rem 5rem 2rem 5rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.desc h3 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.desc h4 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.desc i {
+  color: var(--lblue);
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.desc i b {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.synopsis {
+  position: relative;
+  display: block;
+  margin: 0rem 10rem 0rem 10rem;
+  color: white;
+  font-size: 2rem;
+}
+
+#hr1 {
+  margin: 3rem 5rem 3rem 5rem;
+  position: relative;
+  height: 30px;
+  border-style: solid;
+  border-color: #8c8b8b;
+  border-width: 0.3rem 0 0 0;
+  border-radius: 20px;
+}
+
+hr::before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #8c8b8b;
+  border-width: 0 1px 0 0;
+  border-radius: 20px;
+}
+
+#hr2 {
+  margin: 0rem 5rem 3rem 5rem;
+  position: relative;
+  height: 30px;
+  border-style: solid;
+  border-color: #8c8b8b;
+  border-width: 0 0 0.3rem 0;
+  border-radius: 20px;
+}
+
+.eps {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.anime::-webkit-scrollbar {
+  display: none;
+}
+
+.anime {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: none;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  display:flex;
+  flex-direction: column-reverse;
+  /* background-color: aqua; */
+  background-image: url(../img/thumb-frieren.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 28vw;
+  height: 16vw;
+  margin: 1vw;
+  transition: 0.5s ease;
+}
+
+/* .syn{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  } */
+
+.title {
+  align-self: flex-end;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  position: relative;
+  padding: 5%;
+  /* bottom: 0; */
+  /* left:5%; */
+  color: white;
+  font-size: 2rem;
+  overflow: hidden;
+  /* transition: all 0.5s linear; */
+  /* transition: height 2s ease-out;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out; */
+}
+
+.trailer {
+  /* color: white; */
+  bottom: 5rem;
+  right: 5rem;
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: var(--dblue);
+  text-decoration: none;
+  position: absolute;
+}
+
+.trailer:hover{
+  color:white;
+}
+
+.short {
+  font-size: 1.3rem;
+  display: none;
+  /* display:block; */
+}
+
+.shortdisplay{
+  display:block !important;
+}
+
+.shorticon{
+  margin:0.5rem;
+  font-weight: 500;
+}
+
+/* .display{
+  display: block !important;
+} */
+
+.title:hover {
+  /* height: 100%; */
+} 
+
+.title:hover + div{
+  height:100%;
+  padding:5%;
+  background-color: rgba(0, 0, 0, 0.65);
+  display:block;
+  color:white;
+  position:relative;
+}
+
+.eps2{
+  display:none;
+}
+
+.showeps{
+  display:flex;
+}
+
+#more{
+  padding:1.5rem;
+  font-size:2rem;
+  cursor: pointer;
+  text-align: center;
+  color:white;
+}
+
+#more:hover{
+  color:var(--dblue);
+}
+
+@media (max-width: 500px) {
+  .banner {
+    height: 20vh;
+  }
+}

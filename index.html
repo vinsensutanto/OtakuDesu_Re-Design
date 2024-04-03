@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page | Otaku Desu</title>
+    <link rel="icon" href="assets/img/logo.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="assets/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><img src="assets/img/logo.png" /></a>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="browse.html">Browse</a>
+        <a href="sched.html">Schedule</a>
+        <a href="index.html">Suprise Me!</a>
+      </nav>
+      <div class="icons">
+        <input type="text" placeholder="Search!" id="sinput" class="search" />
+        <i class="fa fa-bars" id="menu-bars"></i>
+        <i class="fa fa-search" id="search"></i>
+        <i class="fa fa-history" id="icon"></i>
+        <i class="fa fa-warning" id="icon"></i>
+        <i class="fa fa-bookmark" id="icon"></i>
+        <i class="fa fa-user" id="icon"></i>
+      </div>
+    </header>
+
+    <main>
+      <div class="slider">
+        <div class="text" style="left:-50vw;">
+          <div class="banner-info">
+            <div class="banner-rating"><i class="fa fa-star" id="score"> 8.6/10</i></div>
+            <div class="banner-desc" id="desc">Set in a world where everyone is given the ability to use magic, the story follows Asta, a young boy born without any magic power who is given a rare grimoire that grants him anti-magic abilities. With his fellow mages from the Black Bulls, Asta plans to become the next Wizard King.</div>
+            <h2 class="banner-title" id="title"></h2>
+          </div>
+          <!-- <div class="banner-info">
+            <div class="banner-rating"><i class="fa fa-star"> 8/10</i></div>
+            <div class="banner-desc">A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.</div>
+            <h2 class="banner-title">Demon Slayer</h2>
+          </div>
+          <div class="banner-info">
+            <div class="banner-rating"><i class="fa fa-star"> 7/10</i></div>
+            <div class="banner-desc">A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.</div>
+            <h2 class="banner-title">Kakegurui</h2>
+          </div>
+          <div class="banner-info">
+            <div class="banner-rating"><i class="fa fa-star"> 10/10</i></div>
+            <div class="banner-desc">A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.</div>
+            <h2 class="banner-title">Black Clover</h2>
+          </div>
+          <div class="banner-info">
+            <div class="banner-rating"><i class="fa fa-star"> 10/10</i></div>
+            <div class="banner-desc">A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.</div>
+            <h2 class="banner-title">One Piece</h2>
+          </div> -->
+        </div>
+        <div class="list">
+          <div class="item">
+            <img src="assets/img/banner_Black-Clover.jpeg" alt="" />
+          </div>
+          <div class="item">
+            <img src="assets/img/banner_Demon-Slayer-1.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="assets/img/banner_JJK-2.jpeg" alt="" />
+          </div>
+          <div class="item">
+            <img src="assets/img/banner_Kakegurui.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="assets/img/banner_one-piece.jpg" alt="" />
+          </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="buttons">
+          <button id="prev">
+            <i class="fa fa-angle-double-left fa-3x"></i>
+          </button>
+          <button id="next">
+            <i class="fa fa-angle-double-right fa-3x"></i>
+          </button>
+        </div>
+        <ul class="dots">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="container">
+        <h2 class="section-title">
+          Popular Recomendation <i class="fa fa-fire"></i>
+        </h2>
+        <div class="section">
+          <div class="wrapper">
+            <img class="poster" src="assets/img/poster_Black-Clover.jpg" />
+            <h2>Black Clover</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;800k</i><br />
+            <i class="fa fa-star">&nbsp;9.5/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;1k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;12</i>
+          </div>
+
+          <div class="wrapper">
+            <img class="poster" src="assets/img/poster_Demon-Slayer-1.jpg" />
+            <h2>Demon Slayer</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;780k</i><br />
+            <i class="fa fa-star">&nbsp;0.5/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;2k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;28</i>
+          </div>
+
+          <div class="wrapper">
+            <img
+              class="poster"
+              src="assets/img/poster_Demon-Slayer-MugenTrain.jpg"
+            />
+            <h2>Demon Slayer : <br />Mugen Train</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;200k</i><br />
+            <i class="fa fa-star">&nbsp;10/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;100k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;12</i>
+          </div>
+
+          <div class="wrapper">
+            <img class="poster" src="assets/img/poster_JJK-1.jpeg" />
+            <h2>Jujutsu Kaisen</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
+            <i class="fa fa-star">&nbsp;7/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;21k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;24</i>
+          </div>
+
+          <div class="wrapper">
+            <img class="poster" src="assets/img/poster_JJK-2.webp" />
+            <h2>Jujutsu Kaisen :<br />Shibuya Incident</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
+            <i class="fa fa-star">&nbsp;7/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;21k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;24</i>
+          </div>
+
+          <div class="wrapper">
+            <img class="poster" src="assets/img/poster_One-Piece.jpg" />
+            <h2>One Piece</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
+            <i class="fa fa-star">&nbsp;7/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;21k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;24</i>
+          </div>
+
+          <div class="wrapper">
+            <img class="poster" src="assets/img/poster_One-Piece.jpg" />
+            <h2>One Piece</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
+            <i class="fa fa-star">&nbsp;7/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;21k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;24</i>
+          </div>
+
+          <div class="wrapper">
+            <img class="poster" src="assets/img/poster_One-Piece.jpg" />
+            <h2>One Piece</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
+            <i class="fa fa-star">&nbsp;7/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;21k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;24</i>
+          </div>
+        </div>
+
+        <h2 class="section-title">
+          On-Going Anime <i class="fa fa-forward"></i>
+        </h2>
+        <div class="section">
+          <div class="wrapper">
+            <img class="poster" src="assets/img/poster_Black-Clover.jpg" />
+            <h2>Black Clover</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;800k</i><br />
+            <i class="fa fa-star">&nbsp;9.5/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;1k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;12</i>
+          </div>
+
+          <div class="wrapper">
+            <img class="poster" src="assets/img/poster_Demon-Slayer-1.jpg" />
+            <h2>Demon Slayer</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;780k</i><br />
+            <i class="fa fa-star">&nbsp;0.5/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;2k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;28</i>
+          </div>
+
+          <div class="wrapper">
+            <img
+              class="poster"
+              src="assets/img/poster_Demon-Slayer-MugenTrain.jpg"
+            />
+            <h2>Demon Slayer : <br />Mugen Train</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;200k</i><br />
+            <i class="fa fa-star">&nbsp;10/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;100k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;12</i>
+          </div>
+
+          <div class="wrapper">
+            <img class="poster" src="assets/img/poster_JJK-1.jpeg" />
+            <h2>Jujutsu Kaisen</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
+            <i class="fa fa-star">&nbsp;7/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;21k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;24</i>
+          </div>
+
+          <div class="wrapper">
+            <img class="poster" src="assets/img/poster_JJK-2.webp" />
+            <h2>Jujutsu Kaisen :<br />Shibuya Incident</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
+            <i class="fa fa-star">&nbsp;7/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;21k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;24</i>
+          </div>
+
+          <div class="wrapper">
+            <img class="poster" src="assets/img/poster_One-Piece.jpg" />
+            <h2>One Piece</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
+            <i class="fa fa-star">&nbsp;7/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;21k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;24</i>
+          </div>
+
+          <div class="wrapper">
+            <img class="poster" src="assets/img/poster_One-Piece.jpg" />
+            <h2>One Piece</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
+            <i class="fa fa-star">&nbsp;7/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;21k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;24</i>
+          </div>
+
+          <div class="wrapper">
+            <img class="poster" src="assets/img/poster_One-Piece.jpg" />
+            <h2>One Piece</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
+            <i class="fa fa-star">&nbsp;7/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;21k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;24</i>
+          </div>
+        </div>
+
+        <h2 class="section-title">
+          Completed Anime <i class="fa fa-heart"></i>
+        </h2>
+        <div class="section">
+          <div class="wrapper">
+            <img class="poster" src="assets/img/poster_Kakegurui.jpg" />
+            <h2>Kakegurui</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;800k</i><br />
+            <i class="fa fa-star">&nbsp;9.5/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;1k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;12</i>
+          </div>
+
+          <div class="wrapper">
+            <img class="poster" src="assets/img/poster_Naruto.jpg" />
+            <h2>Naruto</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;780k</i><br />
+            <i class="fa fa-star">&nbsp;0.5/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;2k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;28</i>
+          </div>
+
+          <div class="wrapper">
+            <img
+              class="poster"
+              src="assets/img/poster_Sousou-no-frieren.jpg"
+            />
+            <h2>Sousou no Frieren</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;200k</i><br />
+            <i class="fa fa-star">&nbsp;10/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;100k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;12</i>
+          </div>
+
+          <div class="wrapper">
+            <img class="poster" src="assets/img/poster_Suzume.jpg" />
+            <h2>Suzume</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
+            <i class="fa fa-star">&nbsp;7/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;21k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;24</i>
+          </div>
+
+          <div class="wrapper">
+            <img class="poster" src="assets/img/poster_Tororo.png" />
+            <h2>Tororo</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
+            <i class="fa fa-star">&nbsp;7/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;21k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;24</i>
+          </div>
+
+          <div class="wrapper">
+            <img class="poster" src="assets/img/poster_hdxd-1.jpg" />
+            <h2>High School DxD</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
+            <i class="fa fa-star">&nbsp;7/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;21k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;24</i>
+          </div>
+
+          <div class="wrapper">
+            <img class="poster" src="assets/img/poster_hdxd.jpg" />
+            <h2>High School DxD :<br>Season 2</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
+            <i class="fa fa-star">&nbsp;7/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;21k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;24</i>
+          </div>
+
+          <div class="wrapper">
+            <img class="poster" src="assets/img/poster_hdxd-3.jpg" />
+            <h2>High School DxD :<br>Season 3</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
+            <i class="fa fa-star">&nbsp;7/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;21k</i><br />
+            <i class="fa fa-file-movie-o">&nbsp;24</i>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <footer>
+      <div class="copyright">
+        <a href="#" class="logo"
+          ><img src="assets/img/logo.png" />
+          <p>All rights reserved &#169; Copyright 2022. Otaku Desu.</p></a
+        >
+        <a class="footer-section" href="terms.html">Terms & Policy</a>
+        <a class="footer-section" href="privacy.html">Privacy</a>
+        <a class="footer-section" href="contact.html">Contact Us</a>
+        <a class="footer-section" href="faq.html">FAQ</a>
+        <i class="fa fa-facebook fa-2x"></i>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer data-deferred="1"></script>
+    <script src="assets/js/index.js" defer data-deferred="1"></script>
+  </body>
+</html>
