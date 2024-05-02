@@ -26,18 +26,18 @@
       <a href="#" class="logo"><img src="assets/img/logo.png" /></a>
       <nav class="navbar">
         <a href="index.html">Home</a>
-        <a href="search.html">Browse</a>
+        <a href="browse.html">Browse</a>
         <a href="schedule.html">Schedule</a>
         <a href="anime-jjk.html">Suprise Me!</a>
       </nav>
       <div class="icons">
-        <input type="text" placeholder="Search!" id="sinput" class="search" />
+        <input type="text" placeholder="Search!" id="sinput" class="search"  />
         <i class="fa fa-bars" id="menu-bars"></i>
-        <i class="fa fa-search" id="search"></i>
-        <i class="fa fa-history" id="icon"></i>
-        <i class="fa fa-warning" id="icon"></i>
-        <i class="fa fa-bookmark" id="icon"></i>
-        <i class="fa fa-user" id="icon" onclick="directLogin()"></i>
+        <span class="icon"><i class="fa fa-search" id="search"></i><p>Search</p></span>
+        <span class="icon" onclick="window.history.go(-1);"><i class="fa fa-history" id="icon"></i><p>History</p></span>
+        <span class="icon"><i class="fa fa-warning" id="icon"></i><p>Report</p></span>
+        <span class="icon"><i class="fa fa-bookmark" id="icon"></i><p>Save</p></span>    
+        <span class="icon"><i class="fa fa-user" id="icon" onclick="directLogin()"></i><p>User</p></span>
       </div>
     </header>
 
@@ -98,14 +98,14 @@
       </div>
       <div class="container">
         <div class="btn-wrapper">
-          <button class="btn active"><span>Monday</span><i></i></button>
-          <button class="btn"><span>Tuesday</span><i></i></button>
-          <button class="btn"><span>Wednesday</span><i></i></button>
-          <button class="btn"><span>Thursday</span><i></i></button>
-          <button class="btn"><span>Friday</span><i></i></button>
-          <button class="btn"><span>Saturday</span><i></i></button>
-          <button class="btn"><span>Sunday</span><i></i></button>
-          <button class="btn"><span>Random</span><i></i></button>
+          <button class="btn" onclick="window.location.href='#monday'"><span>Monday</span><i></i></button>
+          <button class="btn" onclick="window.location.href='#tuesday'"><span>Tuesday</span><i></i></button>
+          <button class="btn" onclick="window.location.href='#wednesday'"><span>Wednesday</span><i></i></button>
+          <button class="btn" onclick="window.location.href='#thursday'"><span>Thursday</span><i></i></button>
+          <button class="btn" onclick="window.location.href='#friday'"><span>Friday</span><i></i></button>
+          <button class="btn" onclick="window.location.href='#saturday'"><span>Saturday</span><i></i></button>
+          <button class="btn" onclick="window.location.href='#sunday'"><span>Sunday</span><i></i></button>
+          <button class="btn" onclick="window.location.href='#random'"><span>Random</span><i></i></button>
           <button class="btn">
             <span id="date">By Date&nbsp;>&nbsp;&nbsp;<input type="date" id="date" name="searchDate" value="2018-07-22" min="2014-03-15"/></span>
             <i></i>
@@ -114,8 +114,9 @@
         <h2 class="section-title">
           Up Day : Monday <i class="fa fa-calendar-check-o"></i>
         </h2>
-        <div class="sectionSearch">
-          <div class="wrapper">
+        <div class="sectionSearch" id="monday">
+          <div class="wrapper" onclick="window.location.href='anime-frieren.html'">
+            <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>
             <img class="poster" src="assets/img/poster_Black-Clover.jpg" />
             <h2>Black Clover</h2>
           </div>
@@ -123,10 +124,11 @@
             <i class="fa fa-thumbs-up">&nbsp;800k</i><br />
             <i class="fa fa-star">&nbsp;9.5/10</i><br />
             <i class="fa fa-bookmark">&nbsp;1k</i><br />
-            <i class="fa fa-file-movie-o">&nbsp;12</i>
+            <i>Episode&nbsp;12</i>
           </div>
 
-          <div class="wrapper">
+          <div class="wrapper" onclick="window.location.href='anime-frieren.html'">
+            <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>
             <img class="poster" src="assets/img/poster_Demon-Slayer-1.jpg" />
             <h2>Demon Slayer</h2>
           </div>
@@ -134,10 +136,11 @@
             <i class="fa fa-thumbs-up">&nbsp;780k</i><br />
             <i class="fa fa-star">&nbsp;0.5/10</i><br />
             <i class="fa fa-bookmark">&nbsp;2k</i><br />
-            <i class="fa fa-file-movie-o">&nbsp;28</i>
+            <i>Episode&nbsp;28</i>
           </div>
 
-          <div class="wrapper">
+          <div class="wrapper" onclick="window.location.href='anime-frieren.html'">
+            <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>
             <img
               class="poster"
               src="assets/img/poster_Demon-Slayer-MugenTrain.jpg"
@@ -148,10 +151,11 @@
             <i class="fa fa-thumbs-up">&nbsp;200k</i><br />
             <i class="fa fa-star">&nbsp;10/10</i><br />
             <i class="fa fa-bookmark">&nbsp;100k</i><br />
-            <i class="fa fa-file-movie-o">&nbsp;12</i>
+            <i>Episode&nbsp;12</i>
           </div>
 
-          <div class="wrapper">
+          <div class="wrapper" onclick="window.location.href='anime-frieren.html'">
+            <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>
             <img class="poster" src="assets/img/poster_JJK-1.jpeg" />
             <h2>Jujutsu Kaisen</h2>
           </div>
@@ -159,10 +163,11 @@
             <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
             <i class="fa fa-star">&nbsp;7/10</i><br />
             <i class="fa fa-bookmark">&nbsp;21k</i><br />
-            <i class="fa fa-file-movie-o">&nbsp;24</i>
+            <i>Episode&nbsp;24</i>
           </div>
 
-          <div class="wrapper">
+          <div class="wrapper" onclick="window.location.href='anime-frieren.html'">
+            <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>
             <img class="poster" src="assets/img/poster_JJK-2.webp" />
             <h2>Jujutsu Kaisen :<br />Shibuya Incident</h2>
           </div>
@@ -170,10 +175,11 @@
             <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
             <i class="fa fa-star">&nbsp;7/10</i><br />
             <i class="fa fa-bookmark">&nbsp;21k</i><br />
-            <i class="fa fa-file-movie-o">&nbsp;24</i>
+            <i>Episode&nbsp;24</i>
           </div>
 
-          <div class="wrapper">
+          <div class="wrapper" onclick="window.location.href='anime-frieren.html'">
+            <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>
             <img class="poster" src="assets/img/poster_One-Piece.jpg" />
             <h2>One Piece</h2>
           </div>
@@ -181,10 +187,11 @@
             <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
             <i class="fa fa-star">&nbsp;7/10</i><br />
             <i class="fa fa-bookmark">&nbsp;21k</i><br />
-            <i class="fa fa-file-movie-o">&nbsp;24</i>
+            <i>Episode&nbsp;24</i>
           </div>
 
-          <div class="wrapper">
+          <div class="wrapper" onclick="window.location.href='anime-frieren.html'">
+            <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>
             <img class="poster" src="assets/img/poster_One-Piece.jpg" />
             <h2>One Piece</h2>
           </div>
@@ -192,10 +199,11 @@
             <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
             <i class="fa fa-star">&nbsp;7/10</i><br />
             <i class="fa fa-bookmark">&nbsp;21k</i><br />
-            <i class="fa fa-file-movie-o">&nbsp;24</i>
+            <i>Episode&nbsp;24</i>
           </div>
 
-          <div class="wrapper">
+          <div class="wrapper" onclick="window.location.href='anime-frieren.html'">
+            <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>
             <img class="poster" src="assets/img/poster_One-Piece.jpg" />
             <h2>One Piece</h2>
           </div>
@@ -203,7 +211,153 @@
             <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
             <i class="fa fa-star">&nbsp;7/10</i><br />
             <i class="fa fa-bookmark">&nbsp;21k</i><br />
-            <i class="fa fa-file-movie-o">&nbsp;24</i>
+            <i>Episode&nbsp;24</i>
+          </div>
+        </div>
+
+        <h2 class="section-title">
+          Up Day : Tuesday <i class="fa fa-calendar-check-o"></i>
+        </h2>
+        <div class="sectionSearch" id="tuesday">
+          <div class="wrapper" onclick="window.location.href='anime-frieren.html'">
+            <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>
+            <img class="poster" src="assets/img/poster_Black-Clover.jpg" />
+            <h2>Black Clover</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;800k</i><br />
+            <i class="fa fa-star">&nbsp;9.5/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;1k</i><br />
+            <i>Episode&nbsp;12</i>
+          </div>
+
+          <div class="wrapper" onclick="window.location.href='anime-frieren.html'">
+            <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>
+            <img class="poster" src="assets/img/poster_Demon-Slayer-1.jpg" />
+            <h2>Demon Slayer</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;780k</i><br />
+            <i class="fa fa-star">&nbsp;0.5/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;2k</i><br />
+            <i>Episode&nbsp;28</i>
+          </div>
+
+          <div class="wrapper" onclick="window.location.href='anime-frieren.html'">
+            <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>
+            <img
+              class="poster"
+              src="assets/img/poster_Demon-Slayer-MugenTrain.jpg"
+            />
+            <h2>Demon Slayer : <br />Mugen Train</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;200k</i><br />
+            <i class="fa fa-star">&nbsp;10/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;100k</i><br />
+            <i>Episode&nbsp;12</i>
+          </div>
+        </div>
+
+        <h2 class="section-title">
+          Up Day : Wednesday <i class="fa fa-calendar-check-o"></i>
+        </h2>
+        <div class="sectionSearch" id="wednesday">
+          <div class="wrapper" onclick="window.location.href='anime-frieren.html'">
+            <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>
+            <img class="poster" src="assets/img/poster_Black-Clover.jpg" />
+            <h2>Black Clover</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;800k</i><br />
+            <i class="fa fa-star">&nbsp;9.5/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;1k</i><br />
+            <i>Episode&nbsp;12</i>
+          </div>
+        </div>
+
+        <h2 class="section-title">
+          Up Day : Thursday <i class="fa fa-calendar-check-o"></i>
+        </h2>
+        <div class="sectionSearch" id="thursday">
+          <div class="wrapper" onclick="window.location.href='anime-frieren.html'">
+            <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>
+            <img class="poster" src="assets/img/poster_Black-Clover.jpg" />
+            <h2>Black Clover</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;800k</i><br />
+            <i class="fa fa-star">&nbsp;9.5/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;1k</i><br />
+            <i>Episode&nbsp;12</i>
+          </div>
+        </div>
+
+        <h2 class="section-title">
+          Up Day : Friday <i class="fa fa-calendar-check-o"></i>
+        </h2>
+        <div class="sectionSearch" id="friday">
+          <div class="wrapper" onclick="window.location.href='anime-frieren.html'">
+            <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>
+            <img class="poster" src="assets/img/poster_Black-Clover.jpg" />
+            <h2>Black Clover</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;800k</i><br />
+            <i class="fa fa-star">&nbsp;9.5/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;1k</i><br />
+            <i>Episode&nbsp;12</i>
+          </div>
+        </div>
+
+        <h2 class="section-title">
+          Up Day : Saturday <i class="fa fa-calendar-check-o"></i>
+        </h2>
+        <div class="sectionSearch" id="saturday">
+          <div class="wrapper" onclick="window.location.href='anime-frieren.html'">
+            <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>
+            <img class="poster" src="assets/img/poster_Black-Clover.jpg" />
+            <h2>Black Clover</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;800k</i><br />
+            <i class="fa fa-star">&nbsp;9.5/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;1k</i><br />
+            <i>Episode&nbsp;12</i>
+          </div>
+        </div>
+
+        <h2 class="section-title">
+          Up Day : Sunday <i class="fa fa-calendar-check-o"></i>
+        </h2>
+        <div class="sectionSearch" id="sunday">
+          <div class="wrapper" onclick="window.location.href='anime-frieren.html'">
+            <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>
+            <img class="poster" src="assets/img/poster_Black-Clover.jpg" />
+            <h2>Black Clover</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;800k</i><br />
+            <i class="fa fa-star">&nbsp;9.5/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;1k</i><br />
+            <i>Episode&nbsp;12</i>
+          </div>
+        </div>
+        
+        <h2 class="section-title">
+          Up Day : Random <i class="fa fa-calendar-check-o"></i>
+        </h2>
+        <div class="sectionSearch" id="random">
+          <div class="wrapper" onclick="window.location.href='anime-frieren.html'">
+            <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>
+            <img class="poster" src="assets/img/poster_Black-Clover.jpg" />
+            <h2>Black Clover</h2>
+          </div>
+          <div class="status">
+            <i class="fa fa-thumbs-up">&nbsp;800k</i><br />
+            <i class="fa fa-star">&nbsp;9.5/10</i><br />
+            <i class="fa fa-bookmark">&nbsp;1k</i><br />
+            <i>Episode&nbsp;12</i>
           </div>
         </div>
       </div>

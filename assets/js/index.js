@@ -60,12 +60,16 @@ function reloadSlider() {
   }, 10000);
 }
 
+let count=0;
 dots.forEach((li, key) => {
   li.addEventListener("click", () => {
     active = key;
     reloadSlider();
+    setinfo(key);
   });
+  count++;
 });
+
 window.onresize = function (event) {
   reloadSlider();
 };

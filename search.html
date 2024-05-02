@@ -25,18 +25,18 @@
       <a href="#" class="logo"><img src="assets/img/logo.png" /></a>
       <nav class="navbar">
         <a href="index.html">Home</a>
-        <a href="search.html">Browse</a>
+        <a href="browse.html">Browse</a>
         <a href="schedule.html">Schedule</a>
         <a href="anime-jjk.html">Suprise Me!</a>
       </nav>
       <div class="icons">
-        <input type="text" placeholder="Search!" id="sinput" class="search" />
+        <input type="text" placeholder="Search!" id="sinput" class="search"  />
         <i class="fa fa-bars" id="menu-bars"></i>
-        <i class="fa fa-search" id="search"></i>
-        <i class="fa fa-history" id="icon"></i>
-        <i class="fa fa-warning" id="icon"></i>
-        <i class="fa fa-bookmark" id="icon"></i>
-        <i class="fa fa-user" id="icon" onclick="directLogin()"></i>
+        <span class="icon"><i class="fa fa-search" id="search"></i><p>Search</p></span>
+        <span class="icon" onclick="window.history.go(-1);"><i class="fa fa-history" id="icon"></i><p>History</p></span>
+        <span class="icon"><i class="fa fa-warning" id="icon"></i><p>Report</p></span>
+        <span class="icon"><i class="fa fa-bookmark" id="icon"></i><p>Save</p></span>    
+        <span class="icon"><i class="fa fa-user" id="icon" onclick="directLogin()"></i><p>User</p></span>
       </div>
     </header>
 
@@ -47,7 +47,8 @@
           <i class="fa fa-search"></i>&nbsp;:&nbsp;&nbsp;&nbsp;Jujutsu Kaisen
         </h2>
         <div class="sectionSearch">
-          <div class="wrapper">
+          <div class="wrapper" onclick="window.location.href='anime-jjk.html'">
+            <div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div>  
             <img class="poster" src="assets/img/poster_JJK-1.jpeg" />
             <h2>Jujutsu Kaisen</h2>
           </div>
@@ -55,10 +56,11 @@
             <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
             <i class="fa fa-star">&nbsp;7/10</i><br />
             <i class="fa fa-bookmark">&nbsp;21k</i><br />
-            <i class="fa fa-file-movie-o">&nbsp;24</i>
+            <i>Episode&nbsp;24</i>
           </div>
 
-          <div class="wrapper">
+          <div class="wrapper"  onclick="window.location.href='anime-jjk.html'">
+            <div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div>  
             <img class="poster" src="assets/img/poster_JJK-2.webp" />
             <h2>Jujutsu Kaisen :<br />Shibuya Incident</h2>
           </div>
@@ -66,19 +68,21 @@
             <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
             <i class="fa fa-star">&nbsp;7/10</i><br />
             <i class="fa fa-bookmark">&nbsp;21k</i><br />
-            <i class="fa fa-file-movie-o">&nbsp;24</i>
+            <i>Episode&nbsp;24</i>
           </div>
-          
-          <div class="wrapper">
-            <img class="poster" src="assets/img/poster_jjk-3.jpg" />
-            <h2>Jujutsu Kaisen :<br />Zero</h2>
+
+          <div class="wrapper"  onclick="window.location.href='anime-jjk.html'">
+            <div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div>  
+            <img class="poster" src="assets/img/poster_One-Piece.jpg" />
+            <h2>One Piece</h2>
           </div>
           <div class="status">
             <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
             <i class="fa fa-star">&nbsp;7/10</i><br />
             <i class="fa fa-bookmark">&nbsp;21k</i><br />
-            <i class="fa fa-file-movie-o">&nbsp;24</i>
+            <i>Episode&nbsp;24</i>
           </div>
+
         </div>
       </div>
     </main>

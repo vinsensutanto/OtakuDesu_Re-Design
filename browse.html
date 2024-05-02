@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse | Otaku Desu</title>
+    <link rel="icon" href="assets/img/logo.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/browse.css" />
+    <link
+      rel="stylesheet"
+      href="assets/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><img src="assets/img/logo.png" /></a>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="browse.html">Browse</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="anime-jjk.html">Suprise Me!</a>
+      </nav>
+      <div class="icons">
+        <input type="text" placeholder="Search!" id="sinput" class="search"  />
+        <i class="fa fa-bars" id="menu-bars"></i>
+        <span class="icon"><i class="fa fa-search" id="search"></i><p>Search</p></span>
+        <span class="icon" onclick="window.history.go(-1);"><i class="fa fa-history" id="icon"></i><p>History</p></span>
+        <span class="icon"><i class="fa fa-warning" id="icon"></i><p>Report</p></span>
+        <span class="icon"><i class="fa fa-bookmark" id="icon"></i><p>Save</p></span>    
+        <span class="icon"><i class="fa fa-user" id="icon" onclick="directLogin()"></i><p>User</p></span>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="accordion">
+          <input type="checkbox" name="collapse" id="handle1" checked="checked">
+          <h2 class="handle">
+            <label for="handle1">Genre List</label>
+          </h2>
+          <div class="content">
+            <div class="genre-container">
+              <ul class="ks-cboxtags">
+                <li><input type="checkbox" id="checkboxOne" value="Comedy"><label for="checkboxOne">Comedy</label></li>
+                <li><input type="checkbox" id="checkboxTwo" value="Action" checked><label for="checkboxTwo">Action</label></li>
+                <li><input type="checkbox" id="checkboxThree" value="Romance" checked><label for="checkboxThree">Romance</label></li>
+                <li><input type="checkbox" id="checkboxFour" value="Horror"><label for="checkboxFour">Horror</label></li>
+                <li><input type="checkbox" id="checkboxFive" value="Drama"><label for="checkboxFive">Drama</label></li>
+                <li><input type="checkbox" id="checkboxSix" value="Survival" checked><label for="checkboxSix">Survival</label></li>
+                <li><input type="checkbox" id="checkboxSeven" value="Slice of Life"><label for="checkboxSeven">Slice of Life</label></li>
+                <li><input type="checkbox" id="checkboxEight" value="School"><label for="checkboxEight">School</label></li>
+                <li><input type="checkbox" id="checkboxNine" value="Shoujo"><label for="checkboxNine">Shoujo</label></li>
+                <li><input type="checkbox" id="checkboxTen" value="Seinen"><label for="checkboxTen">Seinen</label></li>
+                <li class="ks-selected"><input type="checkbox" id="checkboxEleven" value="Sports"><label for="checkboxEleven">Sports</label></li>
+                <li><input type="checkbox" id="checkboxTwelve" value="Ecchi"><label for="checkboxTwelve">Ecchi</label></li>
+                <li><input type="checkbox" id="checkboxThirteen" value="Josei"><label for="checkboxThirteen">Josei</label></li>
+                <li><input type="checkbox" id="checkboxFourteen" value="Magic"><label for="checkboxFourteen">Magic</label></li>
+                <li><input type="checkbox" id="checkboxFifteen" value="Psychological"><label for="checkboxFifteen">Psychological</label></li>
+                <li><input type="checkbox" id="checkboxSixteen" value="Isekai"><label for="checkboxSixteen">Isekai</label></li>
+                <li><input type="checkbox" id="checkboxSeventeen" value="Family"><label for="checkboxSeventeen">Family</label></li>
+                <li><input type="checkbox" id="checkboxEightteen" value="Crime"><label for="checkboxEightteen">Crime</label></li>
+                <li><input type="checkbox" id="checkboxNineteen" value="Game"><label for="checkboxNineteen">Game</label></li>
+                <li><input type="checkbox" id="checkboxTwenty" value="Mecha"><label for="checkboxTwenty">Mecha</label></li>
+                <li><input type="checkbox" id="checkboxTwentyOne" value="Parody"><label for="checkboxTwentyOne">Parody</label></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <div class="sec-center"> 	
+          <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+          <label class="for-dropdown" for="dropdown">Sort By : <i>Alphabetical - ASC</i></label>
+          <div class="section-dropdown"> 
+            <a href="#">Popular <i class="fa fa-arrow-right"></i></a>
+            <div>
+              <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub"/>
+              <label class="for-dropdown-sub" for="dropdown-sub">Alphabetical <i class="fa fa-plus"></i></label>
+              <div class="section-dropdown-sub"> 
+                <a href="#">Ascending <i class="fa fa-arrow-right"></i></a>
+                <a href="#">Descending <i class="fa fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div>
+              <input class="dropdown-sub" type="checkbox" id="dropdown-sub1" name="dropdown-sub1"/>
+              <label class="for-dropdown-sub" for="dropdown-sub1">Views <i class="fa fa-plus"></i></label>
+              <div class="section-dropdown-sub"> 
+                <a href="#">Ascending <i class="fa fa-arrow-right"></i></a>
+                <a href="#">Descending <i class="fa fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div>
+              <input class="dropdown-sub" type="checkbox" id="dropdown-sub2" name="dropdown-sub2"/>
+              <label class="for-dropdown-sub" for="dropdown-sub2">Likes <i class="fa fa-plus"></i></label>
+              <div class="section-dropdown-sub"> 
+                <a href="#">Ascending <i class="fa fa-arrow-right"></i></a>
+                <a href="#">Descending <i class="fa fa-arrow-right"></i></a>
+              </div>
+            </div><div>
+              <input class="dropdown-sub" type="checkbox" id="dropdown-sub3" name="dropdown-sub3"/>
+              <label class="for-dropdown-sub" for="dropdown-sub3">Saved <i class="fa fa-plus"></i></label>
+              <div class="section-dropdown-sub"> 
+                <a href="#">Ascending <i class="fa fa-arrow-right"></i></a>
+                <a href="#">Descending <i class="fa fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="section-title">
+          A - Title
+        </h2>
+        <div class="sectionList">
+          <ul>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+          </ul>
+        </div>
+        <h2 class="section-title">
+          B - Title
+        </h2>
+        <div class="sectionList">
+          <ul>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+          </ul>
+        </div>
+        <h2 class="section-title">
+          Y - Title
+        </h2>
+        <div class="sectionList">
+          <ul>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+          </ul>
+        </div><h2 class="section-title">
+          Z - Title
+        </h2>
+        <div class="sectionList">
+          <ul>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+            <li><a href='anime-jjk.html' class="list">Jujutsu Kaisen<div class="wrapper"><div class="status"><i class="fa fa-star"></i>&nbsp;Finished</div><img class="poster" src="assets/img/poster_JJK-1.jpeg"/></div></a></li>
+          </ul>
+        </div>
+      </div>
+      <h2 class="section-title">
+        New Release <i class="fa fa-forward"></i>
+      </h2>
+      <div class="section">
+        <div class="wrapper"  onclick="window.location.href='anime-jjk.html'">
+          <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>  
+          <img class="poster" src="assets/img/poster_Black-Clover.jpg" />
+          <h2>Black Clover</h2>
+        </div>
+        <div class="status">
+          <i class="fa fa-thumbs-up">&nbsp;800k</i><br />
+          <i class="fa fa-star">&nbsp;9.5/10</i><br />
+          <i class="fa fa-bookmark">&nbsp;1k</i><br />
+          <i>Episode&nbsp;12</i>
+        </div>
+
+        <div class="wrapper"  onclick="window.location.href='anime-jjk.html'">
+          <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>  
+          <img class="poster" src="assets/img/poster_Demon-Slayer-1.jpg" />
+          <h2>Demon Slayer</h2>
+        </div>
+        <div class="status">
+          <i class="fa fa-thumbs-up">&nbsp;780k</i><br />
+          <i class="fa fa-star">&nbsp;0.5/10</i><br />
+          <i class="fa fa-bookmark">&nbsp;2k</i><br />
+          <i>Episode&nbsp;28</i>
+        </div>
+
+        <div class="wrapper"  onclick="window.location.href='anime-jjk.html'">
+          <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>  
+          <img
+            class="poster"
+            src="assets/img/poster_Demon-Slayer-MugenTrain.jpg"
+          />
+          <h2>Demon Slayer : <br />Mugen Train</h2>
+        </div>
+        <div class="status">
+          <i class="fa fa-thumbs-up">&nbsp;200k</i><br />
+          <i class="fa fa-star">&nbsp;10/10</i><br />
+          <i class="fa fa-bookmark">&nbsp;100k</i><br />
+          <i>Episode&nbsp;12</i>
+        </div>
+
+        <div class="wrapper" onclick="window.location.href='anime-jjk.html'">
+          <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>  
+          <img class="poster" src="assets/img/poster_JJK-1.jpeg" />
+          <h2>Jujutsu Kaisen</h2>
+        </div>
+        <div class="status">
+          <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
+          <i class="fa fa-star">&nbsp;7/10</i><br />
+          <i class="fa fa-bookmark">&nbsp;21k</i><br />
+          <i>Episode&nbsp;24</i>
+        </div>
+
+        <div class="wrapper"  onclick="window.location.href='anime-jjk.html'">
+          <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>  
+          <img class="poster" src="assets/img/poster_JJK-2.webp" />
+          <h2>Jujutsu Kaisen :<br />Shibuya Incident</h2>
+        </div>
+        <div class="status">
+          <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
+          <i class="fa fa-star">&nbsp;7/10</i><br />
+          <i class="fa fa-bookmark">&nbsp;21k</i><br />
+          <i>Episode&nbsp;24</i>
+        </div>
+
+        <div class="wrapper"  onclick="window.location.href='anime-jjk.html'">
+          <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>  
+          <img class="poster" src="assets/img/poster_One-Piece.jpg" />
+          <h2>One Piece</h2>
+        </div>
+        <div class="status">
+          <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
+          <i class="fa fa-star">&nbsp;7/10</i><br />
+          <i class="fa fa-bookmark">&nbsp;21k</i><br />
+          <i>Episode&nbsp;24</i>
+        </div>
+
+        <div class="wrapper"  onclick="window.location.href='anime-jjk.html'">
+          <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>  
+          <img class="poster" src="assets/img/poster_One-Piece.jpg" />
+          <h2>One Piece</h2>
+        </div>
+        <div class="status">
+          <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
+          <i class="fa fa-star">&nbsp;7/10</i><br />
+          <i class="fa fa-bookmark">&nbsp;21k</i><br />
+          <i>Episode&nbsp;24</i>
+        </div>
+
+        <div class="wrapper"  onclick="window.location.href='anime-jjk.html'">
+          <div class="status"><i class="fa fa-angle-up"></i>&nbsp;Episode 4</div>  
+          <img class="poster" src="assets/img/poster_One-Piece.jpg" />
+          <h2>One Piece</h2>
+        </div>
+        <div class="status">
+          <i class="fa fa-thumbs-up">&nbsp;1m</i><br />
+          <i class="fa fa-star">&nbsp;7/10</i><br />
+          <i class="fa fa-bookmark">&nbsp;21k</i><br />
+          <i>Episode&nbsp;24</i>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="copyright">
+        <a href="#" class="logo"
+          ><img src="assets/img/logo.png" />
+          <p>All rights reserved &#169; Copyright 2022. Otaku Desu.</p></a
+        >
+        <a class="footer-section" href="">Terms & Policy</a>
+        <a class="footer-section" href="">Privacy</a>
+        <a class="footer-section" href="">Contact Us</a>
+        <a class="footer-section" href="">FAQ</a>
+        <i class="fa fa-facebook fa-2x"></i>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer data-deferred="1"></script>
+    <script src="assets/js/index.js" defer data-deferred="1"></script>
+  </body>
+</html>
