@@ -28,6 +28,6 @@ input.addEventListener("keypress", function(event) {
     }
   });
 
-// function search(ele) {
-//     window.location.href="tes.html"
-// }
+  function directLogin(){
+    window.location.href="login.html";
+  }

@@ -79,11 +79,3 @@ function setinfo(i) {
   document.getElementById("desc").innerHTML = desc[i];
   document.getElementById("score").innerHTML = score[i];
 }
-
-function directLogin(){
-  window.location.href="login.html";
-}
-
-function directLogin(){
-  window.location.href="login.html";
-}

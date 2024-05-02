@@ -21,6 +21,11 @@ let epshid = document.querySelector('.eps2');
 
 more.onclick = () =>{
   epshid.classList.toggle('showeps');
+  if(more.innerText=="See Less"){
+    more.innerText = "See More";
+  }else{
+    more.innerText = "See Less";
+  }
 }
 
 // search.onclick = () =>{
